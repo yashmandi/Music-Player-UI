@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+        .music-player {
+            display: flex;
+            align-items: center;
+            margin: 20px auto;
+            width: 300px;
+            padding: 10px;
+            background-color: #c3eed0;
+            border-radius: 5px;
+        }
+
+        .album-cover {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+        }
+
+        .music-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .song-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .artist {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .controls button {
+            height: 30px;
+            width: 30px;
+            margin: 0 5px;
+            background-color: rgb(75, 71, 71);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="music-player">
+        <img src="album-cover.jpg" alt="Album Cover" class="album-cover">
+        <div class="music-info">
+            <h2 class="song-title">The Less I Know the Better</h2>
+            <p class="artist">Tame Impala</p>
+        </div>
+        <div class="controls">
+            <button class="prev-btn">«</button>
+            <button class="pause-btn">||</button>
+            <button class="next-btn">»</button>
+        </div>
+    </div>
+</body>
+
+</html>
